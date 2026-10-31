@@ -7,15 +7,21 @@
 <meta name='description' content='Rogato: boneless, hamburguesas y café en Villagrán y Cortazar, Guanajuato. Mira el menú y haz tu pedido por WhatsApp.'>
 <meta name='theme-color' content='#f2b41b'>
 <script>document.documentElement.classList.add('js')</script>
+<meta name='color-scheme' content='light dark'>
+<meta property='og:type' content='website'>
+<meta property='og:title' content='Rogato · Cafetería y comida fuerte en Villagrán y Cortazar'>
+<meta property='og:description' content='Boneless, hamburguesas, frappés y más. Mira el menú con precios y haz tu pedido por WhatsApp.'>
+<meta property='og:locale' content='es_MX'>
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Rogato","telephone":"+524111083992","priceRange":"$25-$239","servesCuisine":["Café","Boneless","Hamburguesas","Comida mexicana"],"sameAs":["https://www.facebook.com/cafe-rogato-168991293163878/"],"department":[{"@type":"CafeOrCoffeeShop","name":"Rogato Villagrán","address":{"@type":"PostalAddress","streetAddress":"Vicente Guerrero 342","addressLocality":"Villagrán","addressRegion":"Guanajuato","addressCountry":"MX"},"openingHours":["Mo-Fr 09:00-22:00","Sa-Su 09:00-23:00"]},{"@type":"CafeOrCoffeeShop","name":"Rogato Cortazar","address":{"@type":"PostalAddress","streetAddress":"Portal Constitución 119","addressLocality":"Cortazar","addressRegion":"Guanajuato","addressCountry":"MX"},"openingHours":["Mo-Fr 09:00-22:00","Sa-Su 09:00-23:00"]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;600;800&family=Yellowtail&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#efeadf;--ink:#1d1c1a;--red:#d7261e;--mus:#f2b41b;--card:#f8f4ea;--sh:#1d1c1a;--on-red:#fff8ec;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#191816;--ink:#efeadf;--card:#252320;--sh:#000;color-scheme:dark}}
 :root[data-theme="dark"]{--paper:#191816;--ink:#efeadf;--card:#252320;--sh:#000;color-scheme:dark}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 82px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.55 Archivo,system-ui,sans-serif;
 background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .09 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
@@ -26,12 +32,11 @@ a{color:inherit}
 h1,h2,h3,h4{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;margin:0;line-height:.9;text-transform:uppercase}
 .btn{display:inline-block;font-weight:800;text-decoration:none;padding:12px 20px;border:4px solid #1d1c1a;background:#1d1c1a;color:#efeadf;box-shadow:5px 5px 0 var(--red);cursor:pointer;font-family:inherit;font-size:1rem}
 .btn.alt{background:transparent;color:#1d1c1a}
-.btn:hover{background:var(--red);color:#fff8ec;border-color:#1d1c1a}
+@media (hover:hover){.btn:hover{background:var(--red);color:#fff8ec;border-color:#1d1c1a}}
 
 /* hero */
 .hero{border-bottom:6px solid var(--ink);background:var(--mus);color:#1d1c1a;overflow:hidden}
-.hero .wrap{position:relative;padding-top:clamp(70px,8vw,48px);padding-bottom:clamp(24px,4vw,44px)}
-.stamp{position:absolute;right:clamp(16px,4vw,40px);top:clamp(14px,3vw,30px);width:clamp(84px,15vw,160px);aspect-ratio:1;border-radius:50%;background:var(--red);color:var(--on-red);border:4px solid #1d1c1a;display:grid;place-items:center;text-align:center;font:900 clamp(1.05rem,2.4vw,1.8rem)/.95 "Big Shoulders Display",sans-serif;text-transform:uppercase;transform:rotate(9deg);box-shadow:5px 5px 0 #1d1c1a;z-index:2;padding:8px}
+.hero .wrap{position:relative;padding-top:clamp(28px,5vw,48px);padding-bottom:clamp(24px,4vw,44px)}
 .mark{font-size:clamp(5.2rem,27vw,21rem);letter-spacing:-.01em;display:flex;line-height:.78;text-shadow:.035em .035em 0 var(--red);padding-bottom:.06em}
 .mark span{display:inline-block;animation:stamp .5s cubic-bezier(.2,1.4,.4,1) both}
 .mark span:nth-child(2){animation-delay:.08s}.mark span:nth-child(3){animation-delay:.16s}.mark span:nth-child(4){animation-delay:.24s}.mark span:nth-child(5){animation-delay:.32s}.mark span:nth-child(6){animation-delay:.4s}
@@ -48,7 +53,7 @@ h1,h2,h3,h4{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:35;background:var(--paper);border-bottom:4px solid var(--ink)}
 .nav .wrap{display:flex;gap:10px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
 .nav a{flex:none;text-decoration:none;font-weight:800;border:3px solid var(--ink);padding:6px 14px;background:var(--card)}
-.nav a:hover{background:var(--mus);color:#1d1c1a}
+@media (hover:hover){.nav a:hover{background:var(--mus);color:#1d1c1a}}
 
 /* menu */
 section{padding:clamp(40px,7vw,88px) 0}
@@ -69,7 +74,7 @@ h2{font-size:clamp(3rem,9vw,6.5rem)}
 .row p{margin:5px 0 0;font-size:.98rem;max-width:44ch}
 .qty{display:flex;align-items:center;border:3px solid currentColor;align-self:flex-start}
 .qty button{width:46px;height:46px;border:0;background:transparent;color:inherit;font:900 1.6rem/1 "Big Shoulders Display",sans-serif;cursor:pointer}
-.qty button:hover{background:#1d1c1a;color:#efeadf}
+@media (hover:hover){.qty button:hover{background:#1d1c1a;color:#efeadf}}
 .qty output{min-width:44px;text-align:center;font:900 1.5rem "Big Shoulders Display",sans-serif;border-inline:3px solid currentColor;line-height:46px;height:46px}
 
 /* order */
@@ -86,13 +91,13 @@ legend,label.t{font-weight:800;display:block;margin-bottom:6px;padding:0}
 input[type=text],textarea{width:100%;font:inherit;border:3px solid #1d1c1a;background:#f8f4ea;color:#1d1c1a;padding:12px;margin-bottom:18px;border-radius:0}
 textarea{min-height:96px;resize:vertical}
 .go{display:inline-block;background:#1d1c1a;color:#efeadf;font-weight:800;text-decoration:none;padding:14px 24px;border:4px solid #1d1c1a;box-shadow:5px 5px 0 var(--red)}
-.go:hover{background:var(--red)}
+@media (hover:hover){.go:hover{background:var(--red)}}
 .go[aria-disabled=true]{opacity:.45;pointer-events:none}
 .clear{background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit;margin-left:16px}
 
 /* floating bar */
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#1d1c1a;color:#efeadf;border-top:5px solid var(--red);padding:12px clamp(16px,4vw,40px) calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:16px;align-items:center;justify-content:space-between;transition:transform .25s}
-.bar[hidden]{display:flex;transform:translateY(110%)}
+.bar[hidden]{display:flex;transform:translateY(110%);visibility:hidden;transition:transform .25s,visibility 0s .25s}
 .bar b{font:900 1.7rem "Big Shoulders Display",sans-serif;text-transform:uppercase}
 .bar a{background:var(--mus);color:#1d1c1a;font-weight:800;text-decoration:none;padding:10px 20px;border:3px solid #efeadf;box-shadow:4px 4px 0 var(--red)}
 
@@ -105,7 +110,7 @@ textarea{min-height:96px;resize:vertical}
 .branch p{margin:0 0 14px;opacity:.85}
 .links{display:flex;flex-wrap:wrap;gap:12px}
 .links a{border:3px solid var(--paper);padding:8px 16px;text-decoration:none;font-weight:800}
-.links a:hover{background:var(--mus);color:#1d1c1a;border-color:var(--mus)}
+@media (hover:hover){.links a:hover{background:var(--mus);color:#1d1c1a;border-color:var(--mus)}}
 table{width:100%;border-collapse:collapse;font-size:1.1rem}
 caption{text-align:left;font-weight:800;padding:0 12px 8px}
 td{padding:11px 12px;border-bottom:2px solid rgba(128,128,128,.4)}
@@ -134,49 +139,76 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
 .site-foot ul{list-style:none;margin:0;padding:0}
 .site-foot li{margin-bottom:6px}
 .site-foot a{text-underline-offset:3px}
-.site-foot a:hover{background:#1d1c1a;color:var(--on-red)}
+@media (hover:hover){.site-foot a:hover{background:#1d1c1a;color:var(--on-red)}}
 .site-foot :focus-visible{outline-color:#1d1c1a}
 .sf-base{margin-top:48px;padding-top:20px;border-top:3px solid #1d1c1a;display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:space-between;align-items:center;font-size:.9rem}
 .sf-base p{max-width:60ch}
 .site-foot .btn{box-shadow:4px 4px 0 #fff8ec;text-decoration:none}
-.site-foot .btn:hover{background:var(--mus);color:#1d1c1a}
+@media (hover:hover){.site-foot .btn:hover{background:var(--mus);color:#1d1c1a}}
 
+
+/* extras */
+.skip{position:fixed;left:12px;top:-80px;z-index:60;background:#1d1c1a;color:#efeadf;padding:10px 16px;font-weight:800;text-decoration:none;border:3px solid var(--red)}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
+.item.r :focus-visible{outline-color:#fff8ec}
+.stamp svg{display:block;width:100%;height:auto}
+.site-foot .wrap{position:relative}
+.sf-logo{display:block;position:absolute;right:clamp(16px,4vw,40px);top:clamp(30px,5vw,64px);width:clamp(110px,15vw,180px);color:var(--on-red);rotate:-8deg}
+@media (max-width:640px){.sf-logo{display:none}}
+.tape{position:relative;height:clamp(130px,22vw,200px);overflow:hidden;border-bottom:6px solid var(--ink)}
+.tape-b{position:absolute;left:-6%;width:112%;overflow:hidden;font:900 clamp(1.7rem,4.4vw,3.1rem)/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;padding:10px 0;border-block:5px solid #1d1c1a}
+.tape-b.a{top:14%;background:var(--mus);color:#1d1c1a;rotate:-2.2deg;z-index:1}
+.tape-b.b{top:48%;background:var(--red);color:var(--on-red);rotate:1.8deg}
+.tape-track{display:flex;width:max-content;will-change:transform}
+.tape-set{display:flex;align-items:center;gap:1em;padding-right:1em;flex:none;white-space:nowrap}
+.tape-set svg{width:.8em;height:.8em;flex:none}
+.buy{display:flex;align-items:center;gap:14px}
+.pr{font:900 1.8rem/1 "Big Shoulders Display",Impact,sans-serif;min-width:3.4ch;text-align:right}
+.item .buy{position:relative;z-index:1;gap:18px}
+.item .pr{font-size:3rem;min-width:0}
+.opt{display:block;margin-top:8px;font-weight:800;font-size:.9rem}
+.opt select{margin-left:8px;font:inherit;font-weight:600;color:var(--ink);background:var(--card);border:3px solid var(--ink);padding:5px 8px;border-radius:0;max-width:100%}
+.order li{display:flex;justify-content:space-between;gap:16px}
+.totalbox[hidden]{display:none}
+.totalbox{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;margin-top:18px;padding:14px 18px;background:#1d1c1a;color:#efeadf;border:4px solid #1d1c1a;box-shadow:6px 6px 0 var(--red)}
+.totalbox span{font-weight:800}
+.totalbox b{display:inline-block;font:900 clamp(2.6rem,6vw,4rem)/1 "Big Shoulders Display",Impact,sans-serif;color:var(--mus)}
+.totalbox small{flex-basis:100%;opacity:.8}
+.bar .bt{display:inline-block;margin-left:14px;font:900 1.7rem "Big Shoulders Display",sans-serif;color:var(--mus)}
 
 /* movimiento */
 .prog{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:6px;width:100%;background:var(--red);border-bottom:2px solid #1d1c1a;transform-origin:0 50%;transform:scaleX(var(--sp,0));z-index:50}
 .mark{transform:scale(calc(1 - var(--hp,0)*.12));transform-origin:0 100%}
-.stamp{transform:none;rotate:calc(9deg + var(--hp,0)*60deg);translate:0 calc(var(--hp,0)*90px);animation:stampin .6s .75s cubic-bezier(.2,1.6,.4,1) both}
 @keyframes stampin{from{scale:0;opacity:0}to{scale:1;opacity:1}}
 .hero-row{animation:up .7s .6s cubic-bezier(.2,.8,.2,1) both}
 @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 .art,.cup{translate:0 calc(var(--py,0)*1px)}
 .js [data-r]{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1),clip-path .8s cubic-bezier(.7,0,.2,1),box-shadow .7s ease .15s,border-left-width .5s,padding-left .5s,translate .25s;transition-delay:var(--d,0ms)}
-.js [data-r='wipe']:not(.in){clip-path:inset(0 100% 0 0)}
-.js [data-r='wipe'].in{clip-path:inset(0 0 0 0)}
+.js [data-r='wipe']:not(.in){clip-path:inset(-25% 100% -25% -6%)}
+.js [data-r='wipe'].in{clip-path:inset(-25% -6% -25% -6%)}
 .js [data-r='rise']:not(.in){opacity:0;transform:translateY(46px)}
 .js [data-r='row']:not(.in){opacity:0;transform:translateX(-28px)}
 .js [data-r='stamp']:not(.in){opacity:0;transform:scale(.9) rotate(var(--rot,-2.5deg));box-shadow:0 0 0 var(--sh)}
 .js .branch[data-r]:not(.in){box-shadow:0 0 0 var(--red)}
-.js .cat h3[data-r]:not(.in){border-left-width:0;padding-left:0}
 .sf-mark span{display:inline-block;transition:transform .7s cubic-bezier(.2,1.5,.4,1) calc(var(--i)*70ms),opacity .4s calc(var(--i)*70ms)}
 .js .sf-mark:not(.in) span{transform:translateY(70%) rotate(8deg);opacity:0}
 .nav a{transition:background .2s,color .2s}
 .nav a.on{background:var(--red);color:var(--on-red)}
 .row h4{transition:color .2s}
-.row:hover h4{color:var(--red)}
-.row:hover{translate:6px 0}
+@media (hover:hover){.row:hover h4{color:var(--red)}}
+@media (hover:hover){.row:hover{translate:6px 0}}
 .btn,.go,.bar a{transition:transform .08s,box-shadow .08s,background .2s}
 .btn:active,.go:active,.bar a:active{transform:translate(4px,4px);box-shadow:none}
 .bar b{display:inline-block}
 .tick{animation:bump .3s}
 @keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.3)}100%{transform:scale(1)}}
-.assemble{height:420vh;padding:0;position:relative;border-block:6px solid var(--ink)}
+.assemble{height:380vh;padding:0;position:relative;border-block:6px solid var(--ink)}
 .pin{position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px);height:calc(100vh - 70px);height:calc(100svh - 70px);overflow:hidden}
 .pin-in{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px;height:100%}
 .stage{position:relative;display:grid;place-items:center;height:100%}
 .disc{position:absolute;width:min(78vw,min(560px,80vh));aspect-ratio:1;border-radius:50%;background:var(--red);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--sh);scale:var(--ds,.45);opacity:var(--do,0)}
 .stack{position:relative;width:min(70vw,min(500px,66vh));height:auto;overflow:visible}
-.stack [data-l]{transform-origin:100px 100px}
+.stack [data-l]{transform-origin:100px 100px;will-change:transform}
 .cap h2{font-size:clamp(3.4rem,9vw,7.5rem);min-height:1em;line-height:.88}
 .cap p{font-size:clamp(1.2rem,2.2vw,1.6rem);font-weight:600;margin:14px 0 22px;max-width:24ch}
 .cap .swap{animation:swap .45s cubic-bezier(.2,.8,.2,1)}
@@ -187,23 +219,46 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
 .cap .btn{opacity:0;pointer-events:none;transition:opacity .3s,transform .08s,box-shadow .08s,background .2s}
 .cap .btn.show{opacity:1;pointer-events:auto}
 @media (prefers-reduced-motion:reduce){.assemble{height:auto}.pin{position:static;height:auto;padding:48px 0}.js [data-r]{transition:none}.hero-row,.stamp,.tick,.cap .swap{animation:none}.mark{transform:none}}
-@media (max-width:820px){.big,.rows,.order .cols,.visit .cols{grid-template-columns:1fr}.sf-cols{grid-template-columns:1fr 1fr}.item{min-height:300px}.art{width:clamp(100px,36%,170px)}.pin-in{grid-template-columns:1fr;grid-template-rows:1fr auto;gap:6px}.stage{order:-1}.stack{width:min(76vw,38vh)}.disc{width:min(80vw,42vh)}.cap{padding-bottom:14px}.cap h2{font-size:clamp(2.6rem,12vw,4rem)}.cap p{margin:8px 0 12px}.dots{margin-bottom:12px}}
-@media (max-width:520px){.sf-cols{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){.mark span{animation:none}.bar{transition:none}html{scroll-behavior:auto}.steam path{animation:none;opacity:.8}.sign.on .dot{animation:none}.art{transition:none}}
+@media (max-width:820px){.big,.rows,.order .cols,.visit .cols{grid-template-columns:1fr}.sf-cols{grid-template-columns:1fr 1fr}.item{min-height:300px}.art{width:clamp(100px,36%,170px)}.assemble{height:320vh}.pin-in{grid-template-columns:1fr;grid-template-rows:1fr auto;gap:6px}.stage{order:-1}.stack{width:min(76vw,38vh)}.disc{width:min(80vw,42vh)}.cap{padding-bottom:14px}.cap h2{font-size:clamp(2.6rem,12vw,4rem)}.cap p{margin:8px 0 12px}.dots{margin-bottom:12px}}
+@media (max-width:520px){.sf-cols{grid-template-columns:1fr}.row{grid-template-columns:1fr}.buy{justify-content:space-between}.item .pr{font-size:2.4rem}}
+@media (prefers-reduced-motion:reduce){.assemble{height:auto}.bar,.bar[hidden]{transition:none}.mark span{animation:none}html{scroll-behavior:auto}.steam path{animation:none;opacity:.8}.sign.on .dot{animation:none}.art{transition:none}}
+/* ajustes */
+.hero-side{display:flex;flex-direction:column;align-items:flex-end;gap:16px}
+.stamp{width:clamp(120px,16vw,190px);color:#1d1c1a;rotate:-8deg;animation:stampin .6s .75s cubic-bezier(.2,1.6,.4,1) both}
+@media (max-width:700px){.hero-side{align-items:flex-start}}
+.cat-head{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--ink);color:var(--paper);padding:14px 20px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--red);margin-bottom:16px}
+#destacados{margin-bottom:28px}
+.cat-head h3{font-size:clamp(2.4rem,5.5vw,3.8rem);border:0;padding:0}
+.cat-head .r{display:flex;align-items:center;gap:14px;flex:none}
+.cat-head .cnt{font-weight:800;opacity:.85;white-space:nowrap}
+.cat-head .cup{position:static;width:clamp(52px,8vw,76px);margin:-10px 0 -14px;color:var(--paper);translate:none}
+.cat>p{margin:0 0 6px;padding-left:0}
+@media (max-width:520px){.cat-head{padding:12px 14px;box-shadow:6px 6px 0 var(--red)}.cat-head .cup{display:none}.cat-head .cnt{font-size:.85rem}}
+.row[hidden],.cat[hidden],.cat-head[hidden],.big[hidden]{display:none}
+.search{max-width:540px;margin:0 0 36px}
+.search input{display:block;width:100%;font:inherit;font-weight:600;color:var(--ink);background:var(--card);border:4px solid var(--ink);padding:14px 16px;border-radius:0;box-shadow:6px 6px 0 var(--red);-webkit-appearance:none;appearance:none}
+.search input::placeholder{color:var(--ink);opacity:.55}
+#nores{font-weight:800;font-size:1.2rem;margin:28px 0}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.steps3 div{border:4px solid #1d1c1a;background:#f8f4ea;padding:14px 16px;font-weight:800;box-shadow:5px 5px 0 #1d1c1a}
+.steps3 b{display:block;font:900 2.6rem/1 "Big Shoulders Display",Impact,sans-serif;color:var(--red);margin-bottom:4px}
+@media (max-width:820px){.steps3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class='prog' aria-hidden='true'></div>
+<a class='skip' href='#menu'>Saltar al menú</a>
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'><defs><filter id='rough' x='-10%' y='-10%' width='120%' height='120%'><feTurbulence type='fractalNoise' baseFrequency='.04' numOctaves='2' seed='3' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5'/></filter><path id='ringPath' d='M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0'/></defs><symbol id='logo' viewBox='0 0 200 200'><g fill='none' stroke='currentColor' stroke-linecap='round' filter='url(#rough)'><circle cx='100' cy='100' r='92' stroke-width='7'/><circle cx='100' cy='100' r='60' stroke-width='3'/></g><text font-family='Archivo,Arial,sans-serif' font-weight='800' font-size='11' fill='currentColor'><textPath href='#ringPath' textLength='448' lengthAdjust='spacing'>VILLAGRÁN · CORTAZAR · VILLAGRÁN · CORTAZAR · </textPath></text><text x='100' y='100' text-anchor='middle' font-family='Yellowtail,"Brush Script MT",cursive' font-size='42' fill='currentColor'>Rogato</text><g fill='none' stroke='currentColor' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><path d='M84 130h32v7c0 9-7 15-16 15s-16-6-16-15z'/><path d='M116 133h4c5 0 5 9 0 9h-4'/><path d='M92 124c-3-4 3-5 0-9M100 124c-3-4 3-5 0-9M108 124c-3-4 3-5 0-9'/></g></symbol></svg>
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="stamp" aria-hidden="true">Dos sucursales</div>
+    
     <h1 class="mark" aria-label="Rogato"><span>R</span><span>O</span><span>G</span><span>A</span><span>T</span><span>O</span></h1>
     <div class="hero-row">
       <div>
         <p>Boneless, hamburguesas y café en Villagrán y Cortazar.</p>
         <div class="cta"><a class="btn" href="#menu">Ver el menú</a><a class="btn alt" href="https://wa.me/524111083992" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
       </div>
-      <div class="sign" id="sign" role="status"><i class="dot"></i><div><span id="st">Revisando horario…</span><small id="st2"></small></div></div>
+      <div class="hero-side"><div class="stamp" role="img" aria-label="Logo de Rogato, cafetería en Villagrán y Cortazar"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#logo"/></svg></div><div class="sign" id="sign" role="status"><i class="dot"></i><div><span id="st">Revisando horario…</span><small id="st2"></small></div></div></div>
     </div>
   </div>
 </header>
@@ -211,13 +266,13 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
 <nav class="nav" aria-label="Categorías del menú"><div class="wrap" id="nav"></div></nav>
 
 <main>
-<section class='assemble' id='armada' aria-label='Cómo se arma la hamburguesa de la casa'>
+<section class='assemble' id='armada' aria-label='Cómo se arma la hamburguesa de res'>
   <div class='pin'><div class='wrap pin-in'>
     <div class='cap'>
       <h2 id='capT'>Pan tostado</h2>
-      <p id='capP'>La base de la hamburguesa de la casa.</p>
+      <p id='capP'>La base de la hamburguesa de res.</p>
       <div class='dots' aria-hidden='true'><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <button class='btn' id='capB' type='button' data-n='Hamburguesa de la casa' data-d='1'>Agregar a mi pedido</button>
+      <button class='btn' id='capB' type='button' data-n='Hamburguesa de res' data-d='1'>Agregar a mi pedido, $75</button>
     </div>
     <div class='stage'>
       <div class='disc'></div>
@@ -234,22 +289,30 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
   </div></div>
 </section>
 
+<div class='tape' aria-hidden='true'><div class='tape-b a'><div class='tape-track' id='tapeA'></div></div><div class='tape-b b'><div class='tape-track' id='tapeB'></div></div></div>
+
 <section id="menu">
   <div class="wrap">
     <h2>Lo que sale de la cocina</h2>
-    <p class="lede">Toca + en lo que se te antoje. Tu pedido se arma abajo y lo mandas por WhatsApp a la sucursal que elijas.</p>
+    <p class="lede">Este es el menú de Rogato, con precios. Toca + en lo que se te antoje: tu total se va sumando y mandas el pedido por WhatsApp a la sucursal que elijas.</p>
+    <div class='search'><label class='t' for='qsearch'>Buscar en el menú</label><input type='search' id='qsearch' placeholder='Frappé, boneless, chilaquiles…' autocomplete='off'></div>
+    <p id='nores' hidden>No encontramos eso en el menú. Prueba con otra palabra.</p>
+    <div class="cat-head" id="destacados"><h3>Destacados</h3><span class="cnt">2 productos</span></div>
     <div class="big" id="big"></div>
     <div id="cats"></div>
+    <noscript><p>Para ver el menú y armar tu pedido necesitas activar JavaScript. También puedes escribirnos por <a href='https://wa.me/524111083992'>WhatsApp</a>.</p></noscript>
   </div>
 </section>
 
 <section class="order" id="pedido">
   <div class="wrap">
     <h2>Tu pedido</h2>
+    <div class='steps3'><div><b>1</b>Elige en el menú lo que se te antoje.</div><div><b>2</b>Revisa tu total y escoge la sucursal.</div><div><b>3</b>Mándalo por WhatsApp y Rogato te lo confirma.</div></div>
     <div class="cols">
       <div>
         <ul id="ordList"></ul>
         <p class="empty" id="empty">Aún no eliges nada. Sube al menú y toca + en lo que quieras.</p>
+        <div class='totalbox' id='totalBox' hidden><span>Total</span><b id='total'>$0</b><small>Total según el menú. Rogato confirma tu pedido por WhatsApp.</small></div>
       </div>
       <div>
         <fieldset><legend>Sucursal</legend>
@@ -259,9 +322,9 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
           </div>
         </fieldset>
         <label class="t" for="nombre">Tu nombre</label>
-        <input type="text" id="nombre" autocomplete="given-name">
+        <input type="text" id="nombre" autocomplete="given-name" maxlength="40">
         <label class="t" for="notas">Notas: salsa de los boneless, sin cebolla, para llevar…</label>
-        <textarea id="notas"></textarea>
+        <textarea id="notas" maxlength="300"></textarea>
         <a class="go" id="go" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
         <button class="clear" id="clear" type="button">Vaciar pedido</button>
       </div>
@@ -285,13 +348,12 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
         <div class="branch">
           <h3>Cortazar</h3>
           <address>Portal Constitución 119<br>Cortazar, Guanajuato</address>
-          <p>Confirma el horario por WhatsApp.</p>
-          <div class="links">
+                    <div class="links">
             <a href="https://www.google.com/maps/search/?api=1&query=Rogato+Portal+Constituci%C3%B3n+119+Cortazar+Guanajuato" target="_blank" rel="noopener">Cómo llegar</a>
           </div>
         </div>
       </div>
-      <table><caption>Horario en Villagrán</caption><tbody id="hrs"></tbody></table>
+      <table><caption>Horario de Villagrán y Cortazar</caption><tbody id="hrs"></tbody></table>
     </div>
     
   </div>
@@ -300,11 +362,12 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
 
 <footer class='site-foot'>
   <div class='wrap'>
+    <svg class='sf-logo' viewBox='0 0 200 200' aria-hidden='true'><use href='#logo'/></svg>
     <div class='sf-mark' aria-hidden='true'>Rogato</div>
     <p class='sf-tag'>Café y comida fuerte, en Villagrán y Cortazar.</p>
     <div class='sf-cols'>
       <div><h4>Villagrán</h4><address>Vicente Guerrero 342<br>Zona Centro<br>Villagrán, Guanajuato</address><p>Lunes a viernes de 9:00 a. m. a 10:00 p. m.<br>Sábado y domingo de 9:00 a. m. a 11:00 p. m.</p></div>
-      <div><h4>Cortazar</h4><address>Portal Constitución 119<br>Cortazar, Guanajuato</address><p>Pregunta el horario por WhatsApp.</p></div>
+      <div><h4>Cortazar</h4><address>Portal Constitución 119<br>Cortazar, Guanajuato</address><p>Lunes a viernes de 9:00 a. m. a 10:00 p. m.<br>Sábado y domingo de 9:00 a. m. a 11:00 p. m.</p></div>
       <div><h4>Menú</h4><ul id='fmenu'></ul></div>
       <div><h4>Contacto</h4><ul><li><a href='https://wa.me/524111083992' target='_blank' rel='noopener'>WhatsApp 411 108 3992</a></li><li><a href='https://www.facebook.com/cafe-rogato-168991293163878/' target='_blank' rel='noopener'>Facebook</a></li><li><a href='#pedido'>Hacer un pedido</a></li></ul></div>
     </div>
@@ -316,142 +379,264 @@ tr.today{background:var(--mus);color:#1d1c1a;font-weight:800}
 </footer>
 
 <div class="bar" id="bar" hidden>
-  <b id="count"></b>
+  <div><b id="count"></b><span class="bt" id="barTotal"></span></div>
   <a href="#pedido">Ver pedido</a>
 </div>
 
 <script>
+const $=id=>document.getElementById(id);
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,clamp=(v,lo=0,hi=1)=>Math.min(hi,Math.max(lo,v));
+const setT=(el,t)=>{if(el.textContent!==t)el.textContent=t};
+const money=new Intl.NumberFormat('es-MX',{style:'currency',currency:'MXN',maximumFractionDigits:0});
+const FRUTAS=['Mora azul','Mora','Cereza','Manzana verde','Fresa','Kiwi','Mango','Maracuyá','Frambuesa','Zarzamora'];
 const feat=[
- {n:"Boneless",c:"r",d:"Pollo empanizado en trozos. Dinos tu salsa en las notas del pedido."},
- {n:"Hamburguesa de la casa",c:"y",d:"Carne, queso, verdura fresca y pan tostado."}
+ {n:'Boneless',p:80,c:'r',d:'Los boneless de la casa. Si los quieres con alguna salsa, dínoslo en las notas del pedido.'},
+ {n:'Hamburguesa de res',p:75,c:'y',d:'120 gramos de carne de res, lechuga, jitomate y queso amarillo.'}
 ];
 const cats=[
- {id:"botana",t:"Botana y papas",d:"Para compartir o para ti solo.",i:[
-  ["Palomitas de pollo","Bocados de pollo empanizado, chicos y crujientes."],
-  ["Nuggets","Nuggets de pollo, dorados al momento."],
-  ["Papas a la francesa","Porción de papas fritas, doradas."],
-  ["Papas gajo","Gajos de papa sazonados."],
-  ["Papas con queso","Papas a la francesa con queso derretido."],
-  ["Dedos de queso","Queso empanizado y frito."]]},
- {id:"burgers",t:"Hamburguesas y sándwiches",d:"Pan tostado y verdura fresca.",i:[
-  ["Hamburguesa sencilla","Carne, queso, lechuga, jitomate y cebolla."],
-  ["Hamburguesa doble","Doble carne y doble queso."],
-  ["Hamburguesa de boneless","Boneless con tu salsa dentro del pan."],
-  ["Sándwich de pollo","Pechuga de pollo, lechuga y jitomate."],
-  ["Sándwich de jamón y queso","El clásico, tostado en plancha."],
-  ["Club sándwich","Tres panes con pollo, jamón, queso y tocino."]]},
- {id:"comida",t:"Comida fuerte",d:"Antojitos de cocina para el hambre de verdad.",i:[
-  ["Enchiladas","Rojas o verdes, con pollo, crema y queso."],
-  ["Chilaquiles","Rojos o verdes, con crema, queso y cebolla. Agrega pollo o huevo."],
-  ["Molletes","Bolillo con frijoles y queso gratinado."],
-  ["Huevos al gusto","Revueltos, estrellados o a la mexicana, con frijoles."]]},
- {id:"cafe",t:"Café",d:"Calientes, para la mañana o la tarde.",i:[
-  ["Café americano","Café negro, recién hecho."],
-  ["Capuchino","Espresso con leche vaporizada y espuma."],
-  ["Latte","Espresso con mucha leche vaporizada."],
-  ["Moka","Café con chocolate y leche."],
-  ["Chocolate caliente","Con leche, espeso y dulce."]]},
- {id:"frias",t:"Bebidas frías",d:"Para el calor del Bajío.",i:[
-  ["Frappé","De café, chocolate o vainilla, licuado con hielo."],
-  ["Malteada","De vainilla, fresa o chocolate."],
-  ["Limonada","Natural o mineral."],
-  ["Agua fresca","Sabor del día."],
-  ["Refresco","Pregunta por los sabores."]]},
- {id:"postres",t:"Postres",d:"Para cerrar bien.",i:[
-  ["Tarta del día","Pregunta qué sabor hay hoy."],
-  ["Pastel","Rebanada del día."],
-  ["Helado","Una, dos o tres bolas."],
-  ["Waffle","Con helado y topping a elegir."]]}
+ {id:'snacks',t:'Snacks',d:'Para compartir o para ti solo.',i:[
+  ['Dedos de queso',60],['Salchipapas',60],['Papas a la francesa',50],['Papas gajo',60],['Nuggets',55],['Palomitas de pollo',60],['Boneless',80],['Alitas, 6 piezas',85],['Alitas, 10 piezas',125]]},
+ {id:'burgers',t:'Hamburguesas',d:'Elige la que más se te antoje.',i:[
+  ['Hamburguesa de res',75,'120 gr. de carne de res, lechuga, jitomate y queso amarillo.'],
+  ['Hamburguesa de pollo',75,'120 gr. de pollo empanizado, lechuga, jitomate y queso amarillo.'],
+  ['Hamburguesa Suprema',85,'Doble carne, de res o de pollo empanizado, con lechuga, jitomate y queso amarillo.',{l:'Carne',v:['Res','Pollo']}],
+  ['Hamburguesa BBQ',80,'120 gr. de carne de res, salsa barbecue, lechuga, jitomate y queso amarillo.'],
+  ['Hamburguesa Hawaiana',82,'Jamón, piña en almíbar, lechuga, jitomate y queso amarillo.'],
+  ['Hamburguesa Cubana',92,'120 gr. de carne de res, jamón, chorizo, salchicha, piña en almíbar, queso asadero, lechuga, jitomate y queso amarillo.'],
+  ['Hamburguesa de arrachera',89,'200 gr. de arrachera, lechuga, jitomate y queso amarillo.']]},
+ {id:'sandwiches',t:'Sándwiches y antojitos',d:'Sándwiches y antojitos.',i:[
+  ['Club sándwich con papas',70,'3 rebanadas de pan, jamón, lechuga, jitomate y queso amarillo.',{l:'Relleno',v:[['Jamón',0],['Pollo',10]]}],
+  ['Sándwich caliente con papas',58,'Jamón, lechuga, jitomate y queso amarillo.',{l:'Relleno',v:[['Jamón',0],['Pollo',10]]}],
+  ['Croissant con papas',55,'Jamón, lechuga, jitomate y queso amarillo.',{l:'Relleno',v:[['Jamón',0],['Pollo',10]]}],
+  ['Quesadillas',28,'Con lechuga, salsa, jitomate y queso asadero.',{l:'Relleno',v:['Jamón','Chorizo','Salchicha']}],
+  ['Sincronizadas',38,'Jamón, lechuga, salsa, jitomate y queso asadero.'],
+  ['Flautas',60,'Pollo, lechuga, jitomate, crema y salsa.'],
+  ['Chicken Bake',89]]},
+ {id:'platillos',t:'Platillos',d:'Comida fuerte para el hambre de verdad.',i:[
+  ['Molcajete, parrilla para dos',239,'Arrachera, filete de pollo, salchicha para asar y frijoles refritos.'],
+  ['Arrachera Texas',140,'250 gr. de arrachera con frijoles, ensalada, papas sazonadas, tortillas y salsa.'],
+  ['Tampiqueña',140,'180 gr. de tampiqueña tipo filete con queso gratinado, frijoles, ensalada, papas a la francesa, tortillas y salsa.'],
+  ['Filete de pollo',90,'130 gr. de pollo con arroz, ensalada y papas a la francesa.',{l:'Preparación',v:['Empanizado','Asado']}]]},
+ {id:'enchiladas',t:'Enchiladas y chilaquiles',d:'Antojitos de siempre.',i:[
+  ['Enchiladas suizas',95],['Enfrijoladas',79],['Entomatadas',89],['Enmoladas',79],['Chilaquiles',79]]},
+ {id:'ensaladas',t:'Ensaladas',d:'Frescas y con aderezo.',i:[
+  ['Ensalada César',75,'Lechuga, pepino, jitomate, queso, crotones, pollo empanizado y aderezo.'],
+  ['Ensalada natural',75,'Lechuga, pepino, jitomate, queso, crotones, pechuga de pollo y aderezo.'],
+  ['Extra proteína',30,'Para sumar a tu ensalada.']]},
+ {id:'calientes',t:'Café y calientes',d:'Para la mañana o la tarde.',i:[
+  ['Chocolate Abuelita',40],['Chocolate blanco',40],['Té caliente',30],['Té chai caliente',43],['Americano',30],['Espresso',27],['Matcha caliente',50]]},
+ {id:'capuchinos',t:'Capuchinos',d:'Al natural, con pana o con sabor.',i:[
+  ['Capuchino',40],['Capuchino con pana',48],
+  ['Capuchino con sabor',45,'',{l:'Sabor',v:['Cajeta','Crema irlandesa','Rompope','Moka','Coco','Caramelo','Vainilla','Kahlúa']}],
+  ['Mokachino',40],['Latte',40],['Chocolate bombón',47,'Con crema batida y mini bombones.']]},
+ {id:'frias',t:'Frapeados y fríos',d:'Para el calor del Bajío.',i:[
+  ['Frappé',60,'',{l:'Sabor',v:['Capuchino','Moka','Cajeta']}],
+  ['Frappé Oreo',65],
+  ['Frappé de sabores',60,'',{l:'Sabor',v:FRUTAS}],
+  ['Frappé Magnum',85],['Frappé Brownie',85],
+  ['Frappé Barbie o Mario',65,'',{l:'Sabor',v:['Barbie','Mario']}],
+  ['Frappé Matcha',70],['Frappé Taro',79],['Frappé de fresas con crema',75],
+  ['Soda italiana',40,'',{l:'Sabor',v:FRUTAS}],
+  ['Soda italiana con perlas',55,'',{l:'Sabor',v:FRUTAS}],
+  ['Latte frío',50],['Chai frío',50],['Matcha frío',60]]},
+ {id:'bebidas',t:'Bebidas',d:'Naturales, de lata y de botella.',i:[
+  ['Té helado',35],['Limonada',35],['Naranjada',35],['Conga',35],['Piñada',43],['Malteada',55,'',{l:'Sabor',v:['Fresa','Vainilla','Chocolate']}],['Refresco',25],['Jugos',25],['Latas',25]]},
+ {id:'postres',t:'Postres',d:'Para cerrar bien.',i:[
+  ['Pastel de chocolate',40],['Pastel imposible',35],['Pay de queso con chispas',43],['Pay de zarzamora',40],['Pay de limón',35],['Pastel de zanahoria',42],['Brownie',30],['Brownie con helado',60],['Muffin',25]]}
 ];
 const BURGER=`<svg class='art' viewBox='0 0 200 180' fill='none' stroke='#1d1c1a' stroke-width='5' stroke-linejoin='round' stroke-linecap='round' aria-hidden='true'><path d='M20 152H180V160Q180 174 160 174H40Q20 174 20 160Z' fill='#e08a2b'/><rect x='14' y='122' width='172' height='28' rx='14' fill='#5a3322'/><path d='M16 108H184L168 128L148 114L128 132L106 114L84 132L62 114L40 130Z' fill='#fbe27a'/><rect x='22' y='94' width='156' height='16' rx='8' fill='#d7261e'/><path d='M12 82q11-16 22 0t22 0t22 0t22 0t22 0t22 0t22 0t22 0L188 96H12Z' fill='#3d9a45'/><path d='M20 74C20 28 58 8 100 8S180 28 180 74Z' fill='#e08a2b'/><g fill='#fff8ec' stroke='none'><ellipse cx='68' cy='38' rx='6' ry='3.5' transform='rotate(-20 68 38)'/><ellipse cx='100' cy='26' rx='6' ry='3.5'/><ellipse cx='132' cy='38' rx='6' ry='3.5' transform='rotate(20 132 38)'/><ellipse cx='84' cy='54' rx='6' ry='3.5' transform='rotate(-10 84 54)'/><ellipse cx='118' cy='54' rx='6' ry='3.5' transform='rotate(10 118 54)'/></g></svg>`;
 const BASKET=`<svg class='art' viewBox='0 0 200 180' fill='none' stroke='#1d1c1a' stroke-width='5' stroke-linejoin='round' stroke-linecap='round' aria-hidden='true'><ellipse cx='62' cy='62' rx='34' ry='24' transform='rotate(-18 62 62)' fill='#e8a63a'/><ellipse cx='112' cy='44' rx='32' ry='22' transform='rotate(14 112 44)' fill='#e8a63a'/><ellipse cx='152' cy='76' rx='30' ry='22' transform='rotate(-12 152 76)' fill='#e8a63a'/><ellipse cx='96' cy='84' rx='34' ry='22' transform='rotate(8 96 84)' fill='#d99428'/><path d='M24 104H176L160 174H40Z' fill='#f8f4ea'/><path d='M64 112L58 166M100 112V166M136 112L142 166' stroke='#d7261e' stroke-width='8'/></svg>`;
 const CUP=`<svg class='cup' viewBox='0 0 140 140' fill='none' stroke='currentColor' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><g class='steam'><path d='M44 40c-8-9 0-15 0-24'/><path d='M62 40c-8-9 0-15 0-24'/><path d='M80 40c-8-9 0-15 0-24'/></g><ellipse cx='62' cy='122' rx='56' ry='11' fill='#f8f4ea'/><path d='M20 56H104V80C104 104 88 118 62 118C36 118 20 104 20 80Z' fill='#d7261e'/><path d='M104 66H116C128 66 128 94 112 94H103'/><ellipse cx='62' cy='56' rx='42' ry='8' fill='#5a3322'/></svg>`;
-const q={};
-function stepper(n){
-  return `<div class="qty"><button type="button" data-n="${n}" data-d="-1" aria-label="Quitar ${n}">−</button><output data-o="${n}" aria-live="polite">0</output><button type="button" data-n="${n}" data-d="1" aria-label="Agregar ${n}">+</button></div>`;
+const PRICE={},q={};
+function reg(n,p,o){
+  if(!o){PRICE[n]=p;return{key:n,price:p,sel:''}}
+  const vs=o.v.map(x=>Array.isArray(x)?x:[x,0]);
+  vs.forEach(([l,dl])=>{PRICE[`${n} (${l})`]=p+dl});
+  const key=`${n} (${vs[0][0]})`;
+  const sel=`<label class="opt">${o.l}<select data-base="${n}" aria-label="${o.l} de ${n}">${vs.map(([l,dl])=>`<option value="${l}">${l}${dl?` (+${money.format(dl)})`:''}</option>`).join('')}</select></label>`;
+  return{key,price:PRICE[key],sel};
 }
-document.getElementById('big').innerHTML=feat.map(f=>`<article class="item ${f.c}"><div><h3>${f.n}</h3><p>${f.d}</p></div>${f.c==='r'?BASKET:BURGER}${stepper(f.n)}</article>`).join('');
-document.getElementById('cats').innerHTML=cats.map(c=>`<div class="cat" id="${c.id}">${c.id==='cafe'?CUP:''}<h3>${c.t}</h3><p>${c.d}</p><div class="rows">${c.i.map(([n,d])=>`<div class="row"><div><h4>${n}</h4><p>${d}</p></div>${stepper(n)}</div>`).join('')}</div></div>`).join('');
-document.getElementById('nav').innerHTML=cats.map(c=>`<a href="#${c.id}">${c.t}</a>`).join('');
-document.getElementById('fmenu').innerHTML=cats.map(c=>`<li><a href="#${c.id}">${c.t}</a></li>`).join('');
+function buy(key,price){
+  return `<div class="buy"><span class="pr" data-pr>${money.format(price)}</span><div class="qty"><button type="button" data-n="${key}" data-d="-1" aria-label="Quitar ${key}">−</button><output data-o="${key}" aria-live="polite">0</output><button type="button" data-n="${key}" data-d="1" aria-label="Agregar ${key}">+</button></div></div>`;
+}
+$('big').innerHTML=feat.map(f=>{const r=reg(f.n,f.p);return `<article class="item ${f.c}"><div><h3>${f.n}</h3><p>${f.d}</p></div>${f.c==='r'?BASKET:BURGER}${buy(r.key,r.price)}</article>`}).join('');
+$('cats').innerHTML=cats.map(c=>`<div class="cat" id="${c.id}"><div class="cat-head"><h3>${c.t}</h3><div class="r"><span class="cnt">${c.i.length} productos</span>${c.id==='calientes'?CUP:''}</div></div><p>${c.d}</p><div class="rows">${c.i.map(([n,p,d,o])=>{const r=reg(n,p,o);return `<div class="row"><div><h4>${n}</h4>${d?`<p>${d}</p>`:''}${r.sel}</div>${buy(r.key,r.price)}</div>`}).join('')}</div></div>`).join('');
+$('nav').innerHTML=[['destacados','Destacados'],...cats.map(c=>[c.id,c.t])].map(([id,t])=>`<a href="#${id}">${t}</a>`).join('');
+$('fmenu').innerHTML=cats.map(c=>`<li><a href="#${c.id}">${c.t}</a></li>`).join('');
+
+const tick=el=>{el.classList.remove('tick');void el.offsetWidth;el.classList.add('tick')};
 document.addEventListener('click',e=>{
   const b=e.target.closest('button[data-n]');if(!b)return;
   const n=b.dataset.n;q[n]=Math.max(0,(q[n]||0)+Number(b.dataset.d));
-  document.querySelector(`output[data-o="${n}"]`).textContent=q[n];upd();
-  const o=document.querySelector(`output[data-o="${n}"]`),cb=document.getElementById('count');
-  [o,cb].forEach(el=>{el.classList.remove('tick');void el.offsetWidth;el.classList.add('tick')});
+  document.querySelectorAll('output[data-o]').forEach(o=>{if(o.dataset.o===n){o.textContent=q[n];tick(o)}});
+  upd(true);
   const it=b.closest('.item');if(it){it.classList.add('pop');setTimeout(()=>it.classList.remove('pop'),280)}
 });
-const $=id=>document.getElementById(id);
-function upd(){
-  const l=Object.entries(q).filter(([,v])=>v>0),t=l.reduce((a,[,v])=>a+v,0);
+document.addEventListener('change',e=>{
+  const s=e.target.closest('select[data-base]');if(!s)return;
+  const row=s.closest('.row'),key=`${s.dataset.base} (${s.value})`;
+  row.querySelectorAll('button[data-n]').forEach(b=>{b.dataset.n=key;b.setAttribute('aria-label',(b.dataset.d==='1'?'Agregar ':'Quitar ')+key)});
+  const o=row.querySelector('output');o.dataset.o=key;o.textContent=q[key]||0;
+  row.querySelector('[data-pr]').textContent=money.format(PRICE[key]);
+});
+const KEY='rogato-pedido-v1';
+function save(){try{localStorage.setItem(KEY,JSON.stringify({q:Object.fromEntries(Object.entries(q).filter(([,v])=>v>0)),n:$('nombre').value,t:$('notas').value,s:document.querySelector('input[name=suc]:checked').value}))}catch(e){}}
+function load(){try{
+  const d=JSON.parse(localStorage.getItem(KEY)||'null');if(!d)return;
+  Object.entries(d.q||{}).forEach(([k,v])=>{if(PRICE[k]&&v>0)q[k]=Math.min(99,v|0)});
+  $('nombre').value=String(d.n||'').slice(0,40);$('notas').value=String(d.t||'').slice(0,300);
+  const r=document.querySelector('input[name=suc][value="'+d.s+'"]');if(r)r.checked=true;
+  document.querySelectorAll('output[data-o]').forEach(o=>{o.textContent=q[o.dataset.o]||0});
+}catch(e){}}
+let cur=0,raf=0;
+function countTo(el,to){
+  cancelAnimationFrame(raf);
+  const from=cur,t0=performance.now(),d=RM?0:380;
+  const step=now=>{const k=d?Math.min(1,(now-t0)/d):1;cur=Math.round(from+(to-from)*k);el.textContent=money.format(cur);if(k<1)raf=requestAnimationFrame(step)};
+  raf=requestAnimationFrame(step);
+}
+function upd(bump){
+  const l=Object.entries(q).filter(([,v])=>v>0),t=l.reduce((a,[,v])=>a+v,0),tot=l.reduce((a,[k,v])=>a+v*PRICE[k],0);
   $('bar').hidden=!t;
   $('count').textContent=t+(t===1?' producto':' productos');
-  $('ordList').innerHTML=l.map(([k,v])=>`<li>${v} × ${k}</li>`).join('');
-  $('empty').hidden=!!t;
+  $('barTotal').textContent=money.format(tot);
+  $('ordList').innerHTML=l.map(([k,v])=>`<li><span>${v} × ${k}</span><span>${money.format(v*PRICE[k])}</span></li>`).join('');
+  $('empty').hidden=!!t;$('totalBox').hidden=!t;
+  countTo($('total'),tot);
+  if(bump)[$('count'),$('barTotal'),$('total')].forEach(tick);
   const suc=document.querySelector('input[name=suc]:checked').value,nom=$('nombre').value.trim(),nt=$('notas').value.trim();
-  const msg=`Hola Rogato ${suc}${nom?', soy '+nom:''}. Quiero pedir:\n`+l.map(([k,v])=>`${v} × ${k}`).join('\n')+(nt?`\nNotas: ${nt}`:'');
+  const msg=`Hola Rogato ${suc}${nom?', soy '+nom:''}. Quiero pedir:\n`+l.map(([k,v])=>`${v} × ${k}: ${money.format(v*PRICE[k])}`).join('\n')+`\nTotal: ${money.format(tot)}`+(nt?`\nNotas: ${nt}`:'');
   const go=$('go');
-  go.setAttribute('aria-disabled',t?'false':'true');
-  go.href=t?'https://wa.me/524111083992?text='+encodeURIComponent(msg):'#';
+  if(t){go.href='https://wa.me/524111083992?text='+encodeURIComponent(msg);go.setAttribute('aria-disabled','false')}
+  else{go.removeAttribute('href');go.setAttribute('aria-disabled','true')}
+  save();
 }
-['nombre','notas'].forEach(i=>$(i).addEventListener('input',upd));
-document.querySelectorAll('input[name=suc]').forEach(r=>r.addEventListener('change',upd));
+['nombre','notas'].forEach(i=>$(i).addEventListener('input',()=>upd()));
+document.querySelectorAll('input[name=suc]').forEach(r=>r.addEventListener('change',()=>upd()));
 $('clear').onclick=()=>{Object.keys(q).forEach(k=>q[k]=0);document.querySelectorAll('output[data-o]').forEach(o=>o.textContent=0);upd()};
-upd();
+load();upd();
 
-/* horario de Villagrán (hora de México) */
+/* buscador del menú */
+const norm=t=>t.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const rowsAll=[...document.querySelectorAll('.row')].map(el=>({el,t:norm(el.textContent)}));
+const catsEls=[...document.querySelectorAll('#cats .cat')];
+catsEls.forEach(c=>{const n=c.querySelector('.cnt');if(n)n.dataset.total=n.textContent});
+$('qsearch').addEventListener('input',()=>{
+  const words=norm($('qsearch').value).split(/\s+/).filter(Boolean),on=words.length>0;
+  rowsAll.forEach(r=>{r.el.hidden=on&&!words.every(w=>r.t.includes(w))});
+  let any=false;
+  catsEls.forEach(c=>{
+    const vis=[...c.querySelectorAll('.row')].filter(r=>!r.hidden).length;
+    c.hidden=on&&vis===0;if(vis)any=true;
+    const n=c.querySelector('.cnt');if(n)n.textContent=on?vis+(vis===1?' resultado':' resultados'):n.dataset.total;
+  });
+  $('destacados').hidden=$('big').hidden=on;
+  $('nores').hidden=!(on&&!any);
+  if(typeof refresh==='function')refresh();
+});
+
+/* horario de las dos sucursales (hora de México) */
 const days=['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 const hr=[[9,23],[9,22],[9,22],[9,22],[9,22],[9,22],[9,23]];
+const DAYORD=[1,2,3,4,5,6,0];
 const fmt=h=>(h>12?h-12:h)+':00 '+(h>=12?'p. m.':'a. m.');
-const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Mexico_City',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
-const wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(parts.find(p=>p.type==='weekday').value);
-const hh=parseInt(parts.find(p=>p.type==='hour').value)%24;
-const [a,c]=hr[wd],open=hh>=a&&hh<c;
-$('sign').classList.toggle('on',open);
-$('st').textContent=open?'Villagrán: abierto ahora':'Villagrán: cerrado por ahora';
-$('st2').textContent=open?'Cierra a las '+fmt(c):'Abre a las '+fmt(a)+(hh>=c?' de mañana':'');
-$('hrs').innerHTML=[1,2,3,4,5,6,0].map(i=>`<tr class="${i===wd?'today':''}"><td>${days[i]}</td><td>${fmt(hr[i][0])} a ${fmt(hr[i][1])}</td></tr>`).join('');
-/* movimiento */
-const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,clamp=(v,lo=0,hi=1)=>Math.min(hi,Math.max(lo,v));
+$('hrs').innerHTML=DAYORD.map(i=>`<tr><td>${days[i]}</td><td>${fmt(hr[i][0])} a ${fmt(hr[i][1])}</td></tr>`).join('');
+function renderHours(){
+  const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Mexico_City',weekday:'short',hour:'numeric',hour12:false}).formatToParts(new Date());
+  const wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(parts.find(p=>p.type==='weekday').value);
+  const hh=parseInt(parts.find(p=>p.type==='hour').value)%24;
+  const [from,to]=hr[wd],isOpen=hh>=from&&hh<to;
+  $('sign').classList.toggle('on',isOpen);
+  setT($('st'),isOpen?'Abierto ahora':'Cerrado por ahora');
+  setT($('st2'),isOpen?'Cierra a las '+fmt(to):'Abre a las '+fmt(from)+(hh>=to?' de mañana':''));
+  [...$('hrs').children].forEach((r,k)=>r.classList.toggle('today',DAYORD[k]===wd));
+}
+renderHours();setInterval(renderHours,60000);
+
+/* animación y scroll */
 const sf=document.querySelector('.sf-mark');
 sf.innerHTML=[...'Rogato'].map((l,i)=>`<span style="--i:${i}">${l}</span>`).join('');
 const tag=(sel,type,st)=>document.querySelectorAll(sel).forEach((el,i)=>{el.dataset.r=type;if(st)el.style.setProperty('--d',(i%6)*70+'ms')});
-tag('#menu h2,#pedido h2,#visita h2,.cat h3','wipe');
+tag('#menu h2,#pedido h2,#visita h2,.cat-head','wipe');
 tag('.big .item','stamp');
 document.querySelectorAll('.big .item').forEach((el,i)=>el.style.setProperty('--rot',i?'2.5deg':'-2.5deg'));
-tag('.row,#hrs tr','row',1);
-tag('.lede,.cat>p,.order .cols>div,.branch','rise',1);
+tag('.row:nth-child(-n+8),#hrs tr','row',1);
+tag('.lede,.search,.cat>p,.steps3>div,.order .cols>div,.branch','rise',1);
 sf.dataset.r='letters';
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('in');io.unobserve(t);setTimeout(()=>t.style.removeProperty('--d'),1500)}}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('[data-r]').forEach(el=>RM?el.classList.add('in'):io.observe(el));
-const navEl=document.getElementById('nav'),links=[...navEl.querySelectorAll('a')];
-const spy=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id));const a=navEl.querySelector('a.on');if(a){const r=a.getBoundingClientRect(),n=navEl.getBoundingClientRect();navEl.scrollTo({left:navEl.scrollLeft+(r.left-n.left)-n.width/2+r.width/2,behavior:RM?'auto':'smooth'})}}),{rootMargin:'-40% 0px -55% 0px'});
-document.querySelectorAll('.cat').forEach(c=>spy.observe(c));
-const hero=document.querySelector('.hero'),prog=document.querySelector('.prog'),asm=document.querySelector('.assemble'),pin=document.querySelector('.pin'),layers=[...document.querySelectorAll('.stack [data-l]')],dots=[...document.querySelectorAll('.dots i')],capT=$('capT'),capP=$('capP'),capB=$('capB'),disc=document.querySelector('.disc'),arts=[...document.querySelectorAll('.art,.cup')];
-const steps=[['Pan tostado','La base de la hamburguesa de la casa.'],['Carne','A la plancha, en su punto.'],['Queso','Derretido encima.'],['Jitomate','Fresco, en rodajas.'],['Lechuga','Crujiente y bien verde.'],['Y la tapa','Lista para tu pedido.']];
+
+/* barra de categorías: marca la sección que va arriba */
+const navEl=$('nav'),links=[...navEl.querySelectorAll('a')];
+const secs=[$('destacados'),...document.querySelectorAll('.cat')];
+let secTops=[],menuEnd=0,lastSec=-2;
+function setActive(i){
+  links.forEach((l,k)=>{l.classList.toggle('on',k===i);if(k===i)l.setAttribute('aria-current','location');else l.removeAttribute('aria-current')});
+  const on=links[i];
+  if(on){const r=on.getBoundingClientRect(),n=navEl.getBoundingClientRect();navEl.scrollTo({left:navEl.scrollLeft+(r.left-n.left)-n.width/2+r.width/2,behavior:RM?'auto':'smooth'})}
+}
+
+/* cinta de palabras que corre con el scroll */
+const WORDS=['Boneless','Hamburguesas','Frappés','Molcajete','Café','Chilaquiles','Postres','Villagrán','Cortazar'];
+const STAR="<svg viewBox='0 0 20 20' aria-hidden='true'><path d='M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z' fill='currentColor'/></svg>";
+const SET=`<div class='tape-set'>${WORDS.map(w=>`<span>${w}</span>${STAR}`).join('')}</div>`;
+const tracks=[$('tapeA'),$('tapeB')];
+tracks.forEach(t=>t.innerHTML=SET.repeat(3));
+
+/* hamburguesa que se arma + parallax */
+const hero=document.querySelector('.hero'),prog=document.querySelector('.prog'),asm=document.querySelector('.assemble'),pin=document.querySelector('.pin');
+const layers=[...document.querySelectorAll('.stack [data-l]')],dots=[...document.querySelectorAll('.dots i')];
+const capT=$('capT'),capP=$('capP'),capB=$('capB'),disc=document.querySelector('.disc'),arts=[...document.querySelectorAll('.art')];
+const steps=[['Pan','La base de la hamburguesa de res.'],['Carne','120 gramos de res.'],['Queso','Queso amarillo.'],['Jitomate','En rodajas.'],['Lechuga','Bien fresca.'],['Y la tapa','Lista para tu pedido.']];
 const ease=t=>1+2.4*Math.pow(t-1,3)+1.4*Math.pow(t-1,2);
-let stage=-1,ticking=false;
+let heroH=1,pinTop=0,range=1,asmY=0,setW=1,stage=-1,lastP=-1,lastHp=-1,ticking=false;
+function measure(){
+  heroH=hero.offsetHeight||1;
+  pinTop=parseFloat(getComputedStyle(pin).top)||0;
+  range=Math.max(1,asm.offsetHeight-pin.offsetHeight);
+  asmY=asm.getBoundingClientRect().top+scrollY;
+  setW=tracks[0].firstElementChild.offsetWidth||1;
+  secTops=secs.map(el=>el.getClientRects().length?el.getBoundingClientRect().top+scrollY:Infinity);
+  menuEnd=$('cats').getBoundingClientRect().bottom+scrollY;
+  lastSec=-2;
+  lastP=-1;
+}
 function frame(){
   ticking=false;
   const y=scrollY,H=document.documentElement.scrollHeight-innerHeight;
   prog.style.setProperty('--sp',H>0?(y/H).toFixed(4):0);
   if(!RM){
-    document.documentElement.style.setProperty('--hp',clamp(y/hero.offsetHeight).toFixed(3));
-    arts.forEach(el=>{const r=el.getBoundingClientRect();el.style.setProperty('--py',(clamp((r.top+r.height/2-innerHeight/2)/innerHeight,-1,1)*-28).toFixed(1))});
+    const hp=+clamp(y/heroH).toFixed(3);
+    if(hp!==lastHp){lastHp=hp;hero.style.setProperty('--hp',hp)}
+    const rs=arts.map(el=>el.getBoundingClientRect());
+    arts.forEach((el,i)=>{const r=rs[i];if(r.bottom<-120||r.top>innerHeight+120)return;el.style.setProperty('--py',(clamp((r.top+r.height/2-innerHeight/2)/innerHeight,-1,1)*-28).toFixed(1))});
+    const tx=(y*.35)%setW;
+    tracks[0].style.translate=`${(-tx).toFixed(1)}px 0`;
+    tracks[1].style.translate=`${(tx-setW).toFixed(1)}px 0`;
   }
-  const top=parseFloat(getComputedStyle(pin).top)||0,range=asm.offsetHeight-pin.offsetHeight;
-  const p=RM?1:clamp((top-asm.getBoundingClientRect().top)/range);
+  const probe=pinTop+50;let sec=-1;
+  if(y+probe<menuEnd)secTops.forEach((t,i)=>{if(t-y<=probe)sec=i});
+  if(sec!==lastSec){lastSec=sec;setActive(sec)}
+  const p=RM?1:clamp((y+pinTop-asmY)/range);
+  if(p===lastP)return;
+  lastP=p;
   layers.forEach((g,i)=>{const t=clamp((p-i*.15)/.15),e=ease(t);g.style.transform=`translateY(${((1-e)*-300).toFixed(1)}px) rotate(${((1-e)*-6).toFixed(2)}deg)`;g.style.opacity=clamp(t*4)});
   disc.style.setProperty('--ds',(.45+.55*clamp(p/.2)).toFixed(3));
   disc.style.setProperty('--do',clamp(p/.08).toFixed(2));
   const s=Math.min(5,Math.floor(p/.15));
   if(s!==stage){stage=s;capT.textContent=steps[s][0];capP.textContent=steps[s][1];[capT,capP].forEach(el=>{el.classList.remove('swap');void el.offsetWidth;el.classList.add('swap')});dots.forEach((d,i)=>d.classList.toggle('on',i<=s))}
-  capB.classList.toggle('show',p>.88);
+  const show=p>.88;
+  capB.classList.toggle('show',show);
+  capB.tabIndex=show?0:-1;
+  capB.setAttribute('aria-hidden',show?'false':'true');
 }
+const refresh=()=>{measure();frame()};
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});
-addEventListener('resize',frame);
-frame();
+addEventListener('resize',refresh);
+addEventListener('load',refresh);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refresh);
+if('ResizeObserver' in window)new ResizeObserver(refresh).observe(document.body);
+refresh();
 </script>
 </body>
 </html>
